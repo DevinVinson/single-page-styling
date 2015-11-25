@@ -1,0 +1,12 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.single-page-styling-editor-wrapper {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 5px;
+  min-height: 200px;
+}
