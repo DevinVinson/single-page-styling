@@ -84,7 +84,7 @@ class Single_Page_Styling_Admin {
 	 */
 	public function add_css_meta_box() {
 
-		$screens = apply_filters( 'single_page_styling_post_types', array( 'page' ) );
+		$screens = apply_filters( 'single_page_styling_post_types', array( 'post','page' ) );
 
 		foreach ( $screens as $screen ) {
 			add_meta_box(
