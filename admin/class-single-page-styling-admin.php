@@ -77,10 +77,14 @@ class Single_Page_Styling_Admin {
 
 	}
 
+	/**
+	 * Add CSS Meta Box to each Admin screen we want.
+	 *
+	 * @since 1.0.0
+	 */
+	public function add_css_meta_box() {
 
-	function add_css_meta_box() {
-
-		$screens = apply_filters( 'single_page_styling_post_types', array( 'post', 'page' ) );
+		$screens = apply_filters( 'single_page_styling_post_types', array( 'page' ) );
 
 		foreach ( $screens as $screen ) {
 			add_meta_box(
@@ -92,6 +96,13 @@ class Single_Page_Styling_Admin {
 		}
 	}
 
+	/**
+	 * Pull in the metabox content for display.
+	 *
+	 * @since 1.0.0
+	 * @param $post
+	 *
+	 */
 	public function metabox_callback( $post ) {
 
 		require_once plugin_dir_path( __FILE__ ) . 'partials/single-page-styling-css-metabox.php';
@@ -101,7 +112,9 @@ class Single_Page_Styling_Admin {
 	/**
 	 * Save the meta when the post is saved.
 	 *
+	 * @since 1.0.0
 	 * @param int $post_id The ID of the post being saved.
+	 *
 	 */
 	public function save_metabox( $post_id ) {
 
