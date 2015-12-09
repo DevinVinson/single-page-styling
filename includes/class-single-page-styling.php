@@ -135,8 +135,7 @@ class Single_Page_Styling {
 	private function set_locale() {
 
 		$plugin_i18n = new Single_Page_Styling_i18n();
-		$plugin_i18n->set_domain( $this->get_plugin_name() );
-
+		
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
 	}

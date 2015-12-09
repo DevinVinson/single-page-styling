@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Single Page Styling
  * Plugin URI:        http://tinminewp.com/plugins/single-page-styling
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       This plugin adds a custom css metabox to posts, pages, and custom post types to output css only on those posts or pages.
  * Version:           1.0.0
  * Author:            Devin Vinson
  * Author URI:        http://devinvinson.com
